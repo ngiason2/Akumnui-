@@ -10,11 +10,19 @@ jobs:
       - name: printing calendar
         run: cal
 
-  jobs:
+  job2:
     runs-on: macos-latest 
     needs: [job1]
     steps:
       - name: printing todays date 
         run: date 
+
+  job3:
+    runs-on: windows-latest
+    needs: [job2]
+    steps:
+      - name: printing todays date 
+        run: Get-date
+
 
 
