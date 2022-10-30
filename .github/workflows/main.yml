@@ -11,7 +11,7 @@ jobs:
         run: cal
 
   jobs:
-    runs-on: mocos-latest
+    runs-on: macos-latest 
     needs: [job1]
     steps:
       - name: printing todays date 
