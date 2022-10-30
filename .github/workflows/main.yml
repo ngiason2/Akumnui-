@@ -9,3 +9,12 @@ jobs:
         run: date 
       - name: printing calendar
         run: cal
+
+  jobs:
+    runs-on: mocos-latest
+    needs: [job1]
+    steps:
+      - name: printing todays date 
+        run: date 
+
+
